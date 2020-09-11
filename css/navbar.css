@@ -40,3 +40,7 @@
             .navbar .active {
                 background-color: teal;
             }
+
+            .text {
+                text-align: center;
+            }
