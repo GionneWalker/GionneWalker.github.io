@@ -54,3 +54,6 @@
                 background-color: lightblue;
                 font-size: 20px;
             } 
+            .background {
+                <div style="background-image: url('images/002.gif');">
+            }
