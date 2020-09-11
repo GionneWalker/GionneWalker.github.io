@@ -7,7 +7,7 @@
             .navbar li{
                 list-style-type: none;
                 float: left;
-                color: rgb(161, 189, 118);
+                color: white;
             }
 
             .navbar a{
@@ -33,10 +33,25 @@
                 position: absolute;
             }
 
-            .dropdown:hover .dropdown-content{
+            .dropdown:hover .dropdown-content {
                 display: block;
             }
 
             .navbar .active {
                 background-color: teal;
             }
+
+                .body li{
+                    color: greenyellow; 
+                }
+                .body h1{
+                    color: greenyellow;
+                }
+                .table1{
+                    background-color: lightgreen; border: "3"
+                }
+
+                .table2{
+                    background-color:white; font-size:20px;"
+                }
+
