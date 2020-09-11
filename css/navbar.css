@@ -71,3 +71,7 @@
                 object-fit: cover;
 
             }
+            
+            .image {
+                background-size: cover;
+            }
