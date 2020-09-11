@@ -57,3 +57,11 @@
             .background {
                 <div style="background-image: url('images/002.gif');">
             }
+            .title {
+                color: rgba(175, 13, 13,)/;
+                background-color: aquamarine;
+                font-size: 45px;
+                padding: 0px;
+                text-decoration: none;
+                text-align: left;
+            }
