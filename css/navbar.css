@@ -43,7 +43,7 @@
 
             .text {
                 text-align: center;
-                font-size: 50px;
+                font-size: 30px;
             }
             .table {
                 border: 6; 
@@ -52,7 +52,7 @@
 
             .tr{
                 background-color: lightblue;
-                font-size: 15px;
+                font-size: 23px;
             } 
             .background {
                 <div style="background-image: url('images/002.gif');">
