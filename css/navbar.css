@@ -47,8 +47,7 @@
             }
             .table {
                 border: 6; 
-                background-color: purple;
-            }
+                }  
 
             .tr{
                 background-color: lightblue;
@@ -74,4 +73,15 @@
             
             .image {
                 background-size: cover;
+            }
+            .ph{
+                background-color: aquamarine;
+                color:black;
+                font-size: 12px;
+            }
+
+            .ph title{
+                background-color: aquamarine;
+                color: black;
+                font-size: 24px;
             }
