@@ -18,6 +18,9 @@
                 height: 100%;
                 width: 56%;
                 float: left;
+                display: flex;
+                align-items: center;
+                justify-content: center; 
             }
             #right_pane{
                 background-color: orange;
@@ -30,7 +33,29 @@
                 height: 80%;
             }
             #button_choices{
+                background-color: red;
+                height: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
+            }
+            #story_img{
+                max-height: 100%;
+                max-width: 100%;
+                width: auto;
+                height: auto;
+
+            }
+            .buttons{
+                text-decoration: none;
+                color: white; 
+                background-color: black;
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 16px;
+                margin: 10px;
+               
             }
         </style>
         
@@ -53,10 +78,20 @@
         <h1 class="title"> My First Heading</h1>
         <p class="title">My first paragraph.</p>
         <div id="container">
-            <div id="left_pane"></div>
+            <div id="left_pane">
+                <img id= "story_img" src="images/luffy.png"/>
+            </div>
             <div id="right_pane">
-                <div id="story_text"></div>
-                <div id="button_choices"></div>
+                <div id="story_text">
+                    <p>Welcome to your Isekai adventure</p>
+                    <p> You have been sent to the isekai portal</p>
+                    <p> Which universe would you like to be sent to?</p>
+                </div>
+                <div id="button_choices">
+                    <a class="buttons" href="">One Piece</a>
+                    <a class="buttons" href="">Naruto</a>
+                    <a class="buttons" href=""> Fairy Tail</a> 
+                </div>
             </div>
 
         </div>    
