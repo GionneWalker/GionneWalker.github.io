@@ -1,7 +1,7 @@
  .navbar{
                 background-color: black;
                 overflow: hidden;
-                padding: 0px;
+                padding: 10px;
             }
 
             .navbar li{
@@ -24,16 +24,18 @@
 
             .dropdown-content li {
                 float: none;
+                position: absolute;
+                z-index: 1;
             }
 
             .dropdown-content {
-                padding: 0px;
+                padding: 10px;
                 background-color: black;
                 display: none;
                 position: absolute;
             }
 
-            .dropdown:hover .dropdown-content {
+            .dropdown:hover .dropdown-content{
                 display: block;
             }
 
