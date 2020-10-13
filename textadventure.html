@@ -159,7 +159,7 @@
         }
 
          function Pirate(){
-            img.src= "images/Pirate.jpg";
+            img.src= "images/pirates.jpg";
             p1.innerHTML = "You have now become a Pirate now time to start your adventure";
             p2.innerHTML = "";
             p3.innerHTML = "";
@@ -189,7 +189,7 @@
             else if(state == "Onepiece"){
                 if (button == 1){
                     Marine();
-                    State="Marine";
+                    state="Marine";
                 }
                 else if(button == 2){
                     Pirate();
@@ -197,7 +197,7 @@
                 }
             }  
             else if(state == "Marine"){
-                if (button ==1){
+                if (button == 1){
                     Starttraining();
                     state="Starttraining";
                 }
