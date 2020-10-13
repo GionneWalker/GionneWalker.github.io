@@ -121,7 +121,7 @@
         function Onepiece(){
             img.src="images/onepieceuniverse.jpg";
             p1.innerHTML = "Welcome to the One Piece Universe!";
-            p2.innerHTML = "";
+            p2.innerHTML = "Would you like to be a Marine or a Pirate?";
             p3.innerHTML = "";
             b1.innerHTML = "Marine";
             b2.innerHTML = "Pirate";
@@ -131,11 +131,11 @@
         function Naruto(){
             img.src= "images/narutouniverse.jpg";
             p1.innerHTML = "Welcome to the Naruto Universe!";
-            p2.innerHTML = "";
+            p2.innerHTML = "Whivh kind of jutsu would you like to use";
             p3.innerHTML = "";
-            b1.innerHTML = "Onepiece";
-            b2.innerHTML = "Naruto";
-            b3.innerHTML = "FairyTail";
+            b1.innerHTML = "Ninjutsu";
+            b2.innerHTML = "Genjutsu";
+            b3.innerHTML = "Taijutsu";
         }
 
          function FairyTail(){
@@ -202,8 +202,18 @@
                     state="Starttraining";
                 }
                 else if(button ==2){
-                        Goback();
-                        state="Goback"
+                        intro();
+                        state="intro"
+                }
+            }
+            else if(state == "Pirate"){
+                if (button == 1){
+                    Startadventure();
+                    state="Startadventure";
+                }
+                if (button == 2){
+                    intro();
+                    state="intro";
                 }
             }  
         }
