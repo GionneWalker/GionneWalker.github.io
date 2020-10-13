@@ -167,6 +167,26 @@
             b2.innerHTML = "Goback";
             b3.innerHTML = "";
         }    
+        
+         function Startadventure(){
+            img.src= "images/Buggy.jpg";
+            p1.innerHTML = "You are currently in your home town";
+            p2.innerHTML = "and now you are confronted by Buggy the clown what do you do";
+            p3.innerHTML = "";
+            b1.innerHTML = "Fight";
+            b2.innerHTML = "Runaway";
+            b3.innerHTML = "";
+        }
+
+         function Runaway(){
+            img.src= "images/crew1.png";
+            p1.innerHTML = "You are confronted by Buggy's 1st mate and killed";
+            p2.innerHTML = "";
+            p3.innerHTML = "";
+            b1.innerHTML = "Continue";
+            b2.innerHTML = "";
+            b3.innerHTML = "";
+        }    
 
 
 
@@ -202,8 +222,8 @@
                     state="Starttraining";
                 }
                 else if(button ==2){
-                        intro();
-                        state="intro"
+                    intro();
+                    state="intro";
                 }
             }
             else if(state == "Pirate"){
@@ -215,7 +235,23 @@
                     intro();
                     state="intro";
                 }
-            }  
+            } 
+            else if(state == "Startadventure"){
+                if(button == 1){
+                    Fight();
+                    state="Fight";
+                }
+                if (button == 2){
+                    Runaway();
+                    state="Runaway";
+                }
+            } 
+            else if(state == "Runaway"){
+                if(button == 1){
+                   intro();
+                   state="intro";
+                }
+            }
         }
         
     </script>
