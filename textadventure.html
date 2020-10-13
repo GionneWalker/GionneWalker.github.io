@@ -108,27 +108,67 @@
         intro();
         
         function intro(){
-            img.src = "images/narutouniverse.jpg";
+            img.src = "images/isekai2.jpg";
             b1.innerHTML = "Onepiece";
             b2.innerHTML = "Naruto";
             b3.innerHTML = "FairyTail";
-            p1.innerHTML = "Welcome to your Isekai adventure";
-            p2.innerHTML = "#";
-            p3.innerHTML = "#";
+            p1.innerHTML = "Welcome to your Isekai adventure!";
+            p2.innerHTML = "Where would you like to be transported to?";
+            p3.innerHTML = "";
         }
         
 
         function Onepiece(){
             img.src="images/onepieceuniverse.jpg";
-            p1.innerHTML = "Choose whether to be a Marine or a Pirate";
-            p2.innerHTML = "You will start off as an academy sttudent";
-            p3.innerHTML = "You will start off as a level 1 magic user";
+            p1.innerHTML = "Welcome to the One Piece Universe!";
+            p2.innerHTML = "";
+            p3.innerHTML = "";
+            b1.innerHTML = "Marine";
+            b2.innerHTML = "Pirate";
+            b3.innerHTML = "";
+        }
+        
+        function Naruto(){
+            img.src= "images/narutouniverse.jpg";
+            p1.innerHTML = "Welcome to the Naruto Universe!";
+            p2.innerHTML = "";
+            p3.innerHTML = "";
             b1.innerHTML = "Onepiece";
             b2.innerHTML = "Naruto";
             b3.innerHTML = "FairyTail";
         }
 
-         
+         function FairyTail(){
+            img.src= "images/fairytailuniverse.jpg";
+            p1.innerHTML = "Welcome to the Fairy Tail universe!";
+            p2.innerHTML = "";
+            p3.innerHTML = "";
+            b1.innerHTML = "Onepiece";
+            b2.innerHTML = "Naruto";
+            b3.innerHTML = "FairyTail";
+        }
+
+          function Marine(){
+            img.src= "images/Marine.jpg";
+            p1.innerHTML = "You have now joined the Navy time to start your training";
+            p2.innerHTML = "";
+            p3.innerHTML = "";
+            b1.innerHTML = "StartTraining";
+            b2.innerHTML = "Goback";
+            b3.innerHTML = "";
+        }
+
+         function Pirate(){
+            img.src= "images/Pirate.jpg";
+            p1.innerHTML = "You have now become a Pirate now time to start your adventure";
+            p2.innerHTML = "";
+            p3.innerHTML = "";
+            b1.innerHTML = "StartAdventure";
+            b2.innerHTML = "Goback";
+            b3.innerHTML = "";
+        }    
+
+
 
         //////State Machine
         function bclick(button){
@@ -148,9 +188,24 @@
             }    
             else if(state == "Onepiece"){
                 if (button == 1){
-
+                    Marine();
+                    State="Marine";
                 }
-            }    
+                else if(button == 2){
+                    Pirate();
+                    state="Pirate";
+                }
+            }  
+            else if(state == "Marine"){
+                if (button ==1){
+                    Starttraining();
+                    state="Starttraining";
+                }
+                else if(button ==2){
+                        Goback();
+                        state="Goback"
+                }
+            }  
         }
         
     </script>
