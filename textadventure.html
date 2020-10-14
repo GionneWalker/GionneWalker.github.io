@@ -131,7 +131,7 @@
         function Naruto(){
             img.src= "images/narutouniverse.jpg";
             p1.innerHTML = "Welcome to the Naruto Universe!";
-            p2.innerHTML = "Whivh kind of jutsu would you like to use";
+            p2.innerHTML = "Which kind of jutsu would you like to use";
             p3.innerHTML = "";
             b1.innerHTML = "Ninjutsu";
             b2.innerHTML = "Genjutsu";
@@ -143,9 +143,9 @@
             p1.innerHTML = "Welcome to the Fairy Tail universe!";
             p2.innerHTML = "";
             p3.innerHTML = "";
-            b1.innerHTML = "Onepiece";
-            b2.innerHTML = "Naruto";
-            b3.innerHTML = "FairyTail";
+            b1.innerHTML = "";
+            b2.innerHTML = "Teleport";
+            b3.innerHTML = "";
         }
 
           function Marine(){
@@ -195,8 +195,20 @@
             b1.innerHTML = "Continue";
             b2.innerHTML = "";
             b3.innerHTML = "";
+        }   
+            
+         function Teleport(){
+            img.src= "images/welcome.jpg";
+            p1.innerHTML = "You have arrived at the Fairy Tail Guild and are greeted by what seems to be most of the guild";
+            p2.innerHTML = "";
+            p3.innerHTML = "";
+            b1.innerHTML = "Leave";
+            b2.innerHTML = "Stay";
+            b3.innerHTML = "";
         }    
 
+         
+ 
 
 
 
@@ -264,9 +276,26 @@
                 }
             }
             else if(state == "Fight"){
-                if(button == 1){
+                if(button ==1){
                     Continue();
                     state="Continue";
+                }
+                   
+            }
+            else if(state == "FairyTail"){
+                if (button == 1){
+                    Teleport();
+                    state="Teleport";
+                }
+            }
+            if(state == "Teleport"){
+                if (button == 1){
+                    Leave();
+                    state="Leave";
+                }
+                if (button == 2){
+                    Stay();
+                    state="stay";
                 }
             }
         }
