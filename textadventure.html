@@ -187,6 +187,17 @@
             b2.innerHTML = "";
             b3.innerHTML = "";
         }    
+         function Fight(){
+            img.src= "images/cage.png";
+            p1.innerHTML = "You are defeated in battle and put into a cage";
+            p2.innerHTML = "";
+            p3.innerHTML = "";
+            b1.innerHTML = "Continue";
+            b2.innerHTML = "";
+            b3.innerHTML = "";
+        }    
+
+
 
 
 
@@ -250,6 +261,12 @@
                 if(button == 1){
                    intro();
                    state="intro";
+                }
+            }
+            else if(state == "Fight"){
+                if(button == 1){
+                    Continue();
+                    state="Continue";
                 }
             }
         }
