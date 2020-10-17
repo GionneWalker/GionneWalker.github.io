@@ -131,11 +131,11 @@
         function Naruto(){
             img.src= "images/narutouniverse.jpg";
             p1.innerHTML = "Welcome to the Naruto Universe!";
-            p2.innerHTML = "Which kind of jutsu would you like to use";
+            p2.innerHTML = "";
             p3.innerHTML = "";
-            b1.innerHTML = "Ninjutsu";
-            b2.innerHTML = "Genjutsu";
-            b3.innerHTML = "Taijutsu";
+            b1.innerHTML = "";
+            b2.innerHTML = "GO";
+            b3.innerHTML = "";
         }
 
          function FairyTail(){
@@ -288,14 +288,20 @@
                     state="Teleport";
                 }
             }
-            if(state == "Teleport"){
+            else if(state == "Teleport"){
                 if (button == 1){
                     Leave();
                     state="Leave";
                 }
                 if (button == 2){
                     Stay();
-                    state="stay";
+                    state="Stay";
+                }
+            }
+            else if(state == "Naruto"){
+                if(button == 2){
+                    GO();
+                    state="GO";
                 }
             }
         }
