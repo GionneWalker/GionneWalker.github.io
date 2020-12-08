@@ -50,15 +50,22 @@
                     color: greenyellow;
                 }
                 .table1{
-                    background-color: lightgreen; border: "3"
+                    background-color: lightgreen; 
+                    border: "3"
                 }
 
                 .table2{
-                    background-color:white; font-size:20px;
+                    background-color:white; 
+                    font-size:20px;
                 }
                 
                 .ph{
                     color: azure;
                     font-size: 24px;
+                }
+
+                .title_design{
+                    color: white;
+                    font-size: 32px;
                 }
 
